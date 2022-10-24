@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #111;
+      position: relative;
+    }
+
+    .master-of-all-divs {
+      width: 400px;
+      height: 400px;
+      display: block;
+      margin: 140px auto;
+      transform: rotate(45deg);
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s1 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s1 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s1 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s1 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 10px;
+      height: 10px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s2 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 20px;
+      height: 20px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s2 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 20px;
+      height: 20px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s2 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 20px;
+      height: 20px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s2 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 20px;
+      height: 20px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s3 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 30px;
+      height: 30px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s3 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 30px;
+      height: 30px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s3 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 30px;
+      height: 30px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s3 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 30px;
+      height: 30px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s4 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s4 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s4 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s4 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s5 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s5 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s5 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s5 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s6 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 60px;
+      height: 60px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s6 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 60px;
+      height: 60px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s6 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 60px;
+      height: 60px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s6 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 60px;
+      height: 60px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s7 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 70px;
+      height: 70px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s7 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 70px;
+      height: 70px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s7 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 70px;
+      height: 70px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s7 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 70px;
+      height: 70px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s8 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 80px;
+      height: 80px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s8 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 80px;
+      height: 80px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s8 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 80px;
+      height: 80px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s8 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 80px;
+      height: 80px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s9 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 90px;
+      height: 90px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s9 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 90px;
+      height: 90px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s9 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 90px;
+      height: 90px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s9 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 90px;
+      height: 90px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s10 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 100px;
+      height: 100px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s10 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 100px;
+      height: 100px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s10 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 100px;
+      height: 100px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s10 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 100px;
+      height: 100px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s11 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 110px;
+      height: 110px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s11 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 110px;
+      height: 110px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s11 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 110px;
+      height: 110px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s11 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 110px;
+      height: 110px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s12 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 120px;
+      height: 120px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s12 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 120px;
+      height: 120px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s12 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 120px;
+      height: 120px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s12 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 120px;
+      height: 120px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s13 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 130px;
+      height: 130px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s13 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 130px;
+      height: 130px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s13 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 130px;
+      height: 130px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s13 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 130px;
+      height: 130px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s14 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 140px;
+      height: 140px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s14 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 140px;
+      height: 140px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s14 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 140px;
+      height: 140px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s14 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 140px;
+      height: 140px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s15 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 150px;
+      height: 150px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s15 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 150px;
+      height: 150px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s15 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 150px;
+      height: 150px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s15 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 150px;
+      height: 150px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s16 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 160px;
+      height: 160px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s16 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 160px;
+      height: 160px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s16 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 160px;
+      height: 160px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s16 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 160px;
+      height: 160px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s17 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 170px;
+      height: 170px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s17 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 170px;
+      height: 170px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s17 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 170px;
+      height: 170px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s17 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 170px;
+      height: 170px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s18 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 180px;
+      height: 180px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s18 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 180px;
+      height: 180px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s18 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 180px;
+      height: 180px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s18 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 180px;
+      height: 180px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s19 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 190px;
+      height: 190px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s19 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 190px;
+      height: 190px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s19 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 190px;
+      height: 190px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s19 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 190px;
+      height: 190px;
+    }
+
+    .d1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d1 > .s20 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 200px;
+      height: 200px;
+    }
+
+    .d2 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d2 > .s20 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 200px;
+      height: 200px;
+    }
+
+    .d3 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d3 > .s20 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 200px;
+      height: 200px;
+    }
+
+    .d4 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+    }
+    .d4 > .s20 {
+      position: absolute;
+      -webkit-animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      animation: animation cubic-bezier(0.77, 0, 0.175, 1) 6s infinite;
+      border: 1px solid white;
+      width: 200px;
+      height: 200px;
+    }
+
+    .d2,
+    .d4 {
+      left: 200px;
+    }
+
+    .d4,
+    .d3 {
+      top: 200px;
+    }
+
+    .d3 {
+      transform: rotate(90deg);
+    }
+
+    .d2 {
+      transform: rotate(270deg);
+    }
+
+    .d1 {
+      transform: rotate(180deg);
+    }
+
+    .s20 {
+        background-image: url('https://www.ra-magnit.com.ua/images/stories/virtuemart/product/m767.jpg') no-repeat;
+        background-size: contain;
+    }
+
+    @-webkit-keyframes animation {
+      0% {
+        transform: translate(0px);
+      }
+      33% {
+        transform: translate(100px) skewX(-20deg);
+      }
+      64% {
+        transform: rotate(45deg);
+      }
+      96% {
+        width: 200px;
+      }
+    }
+
+    @keyframes animation {
+      0% {
+        transform: translate(0px);
+      }
+      33% {
+        transform: translate(100px) skewX(-20deg);
+      }
+      64% {
+        transform: rotate(45deg);
+      }
+      96% {
+        width: 200px;
+      }
+    }
+  </style>
+  <body>
+    <div class="master-of-all-divs">
+      <div class="d1">
+        <!-- Emmet for the rescue !-->
+        <span class="s1"
+          ><img
+            src="https://www.ra-magnit.com.ua/images/stories/virtuemart/product/m767.jpg"
+            width="200"
+            height="200"
+        /></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+        <span class="s5"></span>
+        <span class="s6"></span>
+        <span class="s7"></span>
+        <span class="s8"></span>
+        <span class="s9"></span>
+        <span class="s10"></span>
+        <span class="s11"></span>
+        <span class="s12"></span>
+        <span class="s13"></span>
+        <span class="s14"></span>
+        <span class="s15"></span>
+        <span class="s16"></span>
+        <span class="s17"></span>
+        <span class="s18"></span>
+        <span class="s19"></span>
+        <span class="s20"></span>
+      </div>
+      <div class="d2">
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+        <span class="s5"></span>
+        <span class="s6"></span>
+        <span class="s7"></span>
+        <span class="s8"></span>
+        <span class="s9"></span>
+        <span class="s10"></span>
+        <span class="s11"></span>
+        <span class="s12"></span>
+        <span class="s13"></span>
+        <span class="s14"></span>
+        <span class="s15"></span>
+        <span class="s16"></span>
+        <span class="s17"></span>
+        <span class="s18"></span>
+        <span class="s19"></span>
+        <span class="s20"></span>
+      </div>
+
+      <div class="d3">
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+        <span class="s5"></span>
+        <span class="s6"></span>
+        <span class="s7"></span>
+        <span class="s8"></span>
+        <span class="s9"></span>
+        <span class="s10"></span>
+        <span class="s11"></span>
+        <span class="s12"></span>
+        <span class="s13"></span>
+        <span class="s14"></span>
+        <span class="s15"></span>
+        <span class="s16"></span>
+        <span class="s17"></span>
+        <span class="s18"></span>
+        <span class="s19"></span>
+        <span class="s20"></span>
+      </div>
+      <div class="d4">
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="s4"></span>
+        <span class="s5"></span>
+        <span class="s6"></span>
+        <span class="s7"></span>
+        <span class="s8"></span>
+        <span class="s9"></span>
+        <span class="s10"></span>
+        <span class="s11"></span>
+        <span class="s12"></span>
+        <span class="s13"></span>
+        <span class="s14"></span>
+        <span class="s15"></span>
+        <span class="s16"></span>
+        <span class="s17"></span>
+        <span class="s18"></span>
+        <span class="s19"></span>
+        <span class="s20"></span>
+      </div>
+    </div>
+  </body>
+</html>
